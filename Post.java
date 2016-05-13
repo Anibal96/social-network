@@ -38,6 +38,13 @@ public class Post
     }
     
     /**
+     * Metodo que devuelve el autor
+     */
+    public String getAutor(){
+        return username;
+    }
+    
+    /**
      * Metodo para quitar un like en caso de que los haya.
      */
     public void unlike(){

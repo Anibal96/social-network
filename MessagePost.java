@@ -7,7 +7,6 @@
 public class MessagePost extends Post
 {
     private String message;
-
     /**
      * Constructor for objects of class MessagePost
      */
@@ -22,5 +21,9 @@ public class MessagePost extends Post
      */
     public String getText(){
         return message;
+    }
+    
+    public void printShortSummary(){
+        System.out.println("Esto es un post de texto creado por " + getAutor());
     }
 }
