@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 /**
  * Write a description of class NewsFeed here.
  * 
@@ -9,25 +10,30 @@ public class NewsFeed
 {
     private ArrayList<MessagePost> messages;
     private ArrayList<PhotoPost> photos;
+
     /**
      * Constructor for objects of class NewsFeed
      */
     public NewsFeed()
     {
-        messages = new ArrayList<MessagePost>();
-        photos = new ArrayList<PhotoPost>();
+        messages = new ArrayList<>();
+        photos = new ArrayList<>();
     }
-    
+
     /**
-     * Añade un post
+     * Add a post with a message
+     * 
+     * @message the message to introduce
      */
     public void addMessagePost(MessagePost message)
     {
         messages.add(message);
     }
-    
+
     /**
-     * Añade una foto
+     * Add a post with a image
+     * 
+     * @message the image to introduce
      */
     public void addPhotoPost(PhotoPost photo)
     {
@@ -35,15 +41,13 @@ public class NewsFeed
     }
     
     /**
-     * Metodo que muestra los mensajes y las fotos
+     * Show the post
      */
-    public void show()
-    {
-        for(MessagePost post : messages) {
-            post.display();
+    public void show(){
+        for(MessagePost message : messages){
+            message.display();
         }
-        
-        for(PhotoPost photo : photos) {
+        for(PhotoPost photo : photos){
             photo.display();
         }
     }
