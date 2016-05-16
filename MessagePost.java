@@ -4,7 +4,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MessagePost extends Post
+public class MessagePost extends CommentsPost
 {
     private String message;
     /**
@@ -21,13 +21,6 @@ public class MessagePost extends Post
      */
     public String getText(){
         return message;
-    }
-    
-    /**
-     * Metodo para añadir un comentario al post
-     */
-    public void addComment(String text){
-        getComments().add(text);
     }
     
     public void printShortSummary(){

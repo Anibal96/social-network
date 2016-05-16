@@ -4,7 +4,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PhotoPost extends Post
+public class PhotoPost extends CommentsPost
 {
     private String filename;
     private String caption;
@@ -30,12 +30,5 @@ public class PhotoPost extends Post
      */
     public String getCaption(){
         return caption;
-    }
-    
-    /**
-     * Metodo para añadir un comentario al post
-     */
-    public void addComment(String text){
-        getComments().add(text);
     }
 }

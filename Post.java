@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 /**
  * Write a description of class Photo here.
  * 
@@ -10,8 +9,6 @@ public class Post
     private String username;
     private long timestamp;
     private int likes;
-    private ArrayList<String> comments;
-    
     /**
      * Constructor for objects of class Photo
      */
@@ -20,7 +17,6 @@ public class Post
         username = autor;
         timestamp = System.currentTimeMillis();
         likes = 0;
-        comments = new ArrayList<String>();
     }
     
     /**
@@ -35,13 +31,6 @@ public class Post
      */
     public String getUser(){
         return username;
-    }
-    
-    /**
-     * Metodo que devuelve la coleccion de comentarios
-     */
-    public ArrayList<String> getComments(){
-        return comments;
     }
     
     /**
