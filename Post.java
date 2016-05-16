@@ -38,6 +38,13 @@ public class Post
     }
     
     /**
+     * Metodo que devuelve la coleccion de comentarios
+     */
+    public ArrayList<String> getComments(){
+        return comments;
+    }
+    
+    /**
      * Metodo que devuelve el autor
      */
     public String getAutor(){
@@ -50,13 +57,6 @@ public class Post
     public void unlike(){
         if(likes != 0)
            likes--; 
-    }
-    
-    /**
-     * Metodo para añadir un comentario al post
-     */
-    public void addComment(String text){
-        comments.add(text);
     }
     
     /**
@@ -88,11 +88,6 @@ public class Post
         info += username + "\n=====================\n" + "Posted: ";
         info += timeString(time);
         info += "_____________________\nLikes: " + likes + "\n=====================\n\n";
-        if(comments.size() != 0)
-            for(int i=0; i<comments.size(); i++)
-                info += comments.get(i) + "\n_____________________\n";
-        else
-            info += "Sin comentarios";
         System.out.println(info);
     }
 }

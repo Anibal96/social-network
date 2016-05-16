@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 /**
  * Write a description of class MessagePost here.
  * 
@@ -31,5 +30,12 @@ public class PhotoPost extends Post
      */
     public String getCaption(){
         return caption;
+    }
+    
+    /**
+     * Metodo para añadir un comentario al post
+     */
+    public void addComment(String text){
+        getComments().add(text);
     }
 }

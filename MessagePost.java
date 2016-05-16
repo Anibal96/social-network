@@ -23,6 +23,13 @@ public class MessagePost extends Post
         return message;
     }
     
+    /**
+     * Metodo para añadir un comentario al post
+     */
+    public void addComment(String text){
+        getComments().add(text);
+    }
+    
     public void printShortSummary(){
         System.out.println("Esto es un post de texto creado por " + getAutor());
     }
